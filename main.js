@@ -1,9 +1,24 @@
+var d;
+var ta1;
+var ta2;
+var ta3;
+
+window.onload = function () {
+	d = document;
+	ta1 = d.getElementById("textarea1");
+	ta2 = d.getElementById("textarea2");
+	ta3 = d.getElementById("textarea3");
+}
+
+function clearList () {
+	ta1.value = "";
+	ta2.value = "";
+	ta3.value = "";
+}
+
 function merge (sort) {
-	var d = document;
-	var ta1 = d.getElementById("textarea1").value;
-	var ta2 = d.getElementById("textarea2").value;
-	var ta1array = ta1.split("\n");
-	var ta2array = ta2.split("\n");
+	var ta1array = ta1.value.split("\n");
+	var ta2array = ta2.value.split("\n");
 	var ta3array = [];
 	
 	// Get data from textarea 1
@@ -33,5 +48,5 @@ function merge (sort) {
 		}
 	}
 	
-	d.getElementById("textarea3").value = ta3array.join("\n");
+	ta3.value = ta3array.join("\n");
 }
