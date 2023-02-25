@@ -6,16 +6,16 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
-		<br />Merge and sort list 1 and 2<br /><br />
+		<div class="title">Merge and Sort List 1 and 2</div>
 		<table>
 			<tr>
 				<td>
-					List 1<br />
-					<textarea id="textarea1" style="width: 300px; height: 500px;">a&#13;&#10;e&#13;&#10;a&#13;&#10;b</textarea>
+					<div class="label">List 1</div>
+					<textarea id="textarea1">a&#13;&#10;e&#13;&#10;a&#13;&#10;b</textarea>
 				</td>
 				<td>
-					List 2<br />
-					<textarea id="textarea2" style="width: 300px; height: 500px;">c&#13;&#10;f&#13;&#10;d</textarea>
+					<div class="label">List 2</div>
+					<textarea id="textarea2">c&#13;&#10;f&#13;&#10;d</textarea>
 				</td>
 				<td class="buttons">
 					<input type="button" onclick="merge(false);" value="Merge"><br />
@@ -23,8 +23,8 @@
 					<input type="button" onclick="clearList();" value="Clear">
 				</td>
 				<td>
-					Result<br />
-					<textarea id="textarea3" style="width: 300px; height: 500px;"></textarea>
+					<div class="label">Result</div>
+					<textarea id="textarea3"></textarea>
 				</td>
 			</tr>
 		</table>
