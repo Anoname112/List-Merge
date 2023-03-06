@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #DDDDDD;
-	font-family: Tahoma;
+	font-family: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
 }
 
 table {
@@ -17,7 +17,7 @@ td {
 textarea {
 	width: 320px;
 	height: 550px;
-	font-family: Consolas;
+	font-family: "Consolas", "Roboto Mono", "Courier New", "Courier";
 }
 
 input[type=button]:hover {
