@@ -1,23 +1,24 @@
-*, body {
+body {
 	margin: 0;
 	padding: 0;
 	background: #DDDDDD;
 	font-family: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
-	font-size: 15px;
 }
 
 table {
 	background: #B3B3B3;
+	padding: 5px;
 }
 
 td {
-	padding: 8px;
+	padding: 5px;
 }
 
 textarea {
 	width: 320px;
 	height: 550px;
 	font-family: "Consolas", "Roboto Mono", "Courier New", "Courier";
+	font-size: 14px;
 }
 
 input[type=button]:hover {
@@ -25,7 +26,6 @@ input[type=button]:hover {
 }
 
 .container {
-	padding: 8px;
 	display: grid;
 	grid-template-areas:
 		'title'
@@ -38,6 +38,7 @@ input[type=button]:hover {
 	padding: 20px;
 	text-align: center;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 .table {
@@ -46,9 +47,14 @@ input[type=button]:hover {
 }
 
 .label {
-	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 .buttons {
 	text-align: center;
+}
+
+.buttons input {
+	height: 25px;
 }
