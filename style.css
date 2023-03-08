@@ -11,7 +11,7 @@ table {
 
 td {
 	padding: 8px;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 textarea {
@@ -46,7 +46,7 @@ input[type=button]:hover {
 
 .label {
 	padding-bottom: 5px;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .buttons {
