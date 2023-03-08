@@ -25,6 +25,7 @@ input[type=button]:hover {
 }
 
 .container {
+	padding: 8px;
 	display: grid;
 	grid-template-areas:
 		'title'
