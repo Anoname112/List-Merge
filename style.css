@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background: #DDDDDD;
+  background-color: #DDDDDD;
   font-family: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
 }
 
 table {
-  background: #C5C5C5;
   padding: 5px;
+  background-color: #C5C5C5;
 }
 
 td {

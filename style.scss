@@ -1,16 +1,18 @@
+$sandSerif: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
+$monoSpace: "Consolas", "Roboto Mono", "Courier New", "Courier";
 $tablePadding: 5px;
 $textFontSize: 14px;
 
 body {
 	margin: 0;
 	padding: 0;
-	background: #DDDDDD;
-	font-family: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
+	background-color: #DDDDDD;
+	font-family: $sandSerif;
 }
 
 table {
-	background: #C5C5C5;
 	padding: $tablePadding;
+	background-color: #C5C5C5;
 }
 
 td {
@@ -20,7 +22,7 @@ td {
 textarea {
 	width: 320px;
 	height: 550px;
-	font-family: "Consolas", "Roboto Mono", "Courier New", "Courier";
+	font-family: $monoSpace;
 	font-size: $textFontSize;
 }
 
