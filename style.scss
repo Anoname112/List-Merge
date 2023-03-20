@@ -1,0 +1,63 @@
+$tablePadding: 5px;
+$textFontSize: 14px;
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #DDDDDD;
+	font-family: "Tahoma", "Trebuchet MS", "Arial", "Helvetica";
+}
+
+table {
+	background: #C5C5C5;
+	padding: $tablePadding;
+}
+
+td {
+	padding: $tablePadding;
+}
+
+textarea {
+	width: 320px;
+	height: 550px;
+	font-family: "Consolas", "Roboto Mono", "Courier New", "Courier";
+	font-size: $textFontSize;
+}
+
+input[type=button]:hover {
+	cursor: pointer;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		'title'
+		'table';
+}
+
+.title {
+	grid-area: title;
+	justify-self: center;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.table {
+	grid-area: table;
+	justify-self: center;
+}
+
+.label {
+	margin-bottom: $tablePadding * 2;
+	font-size: $textFontSize;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.buttons input {
+	height: 25px;
+}
