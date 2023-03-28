@@ -1,4 +1,4 @@
-$sandSerif: "Tahoma", "Segoe UI", "Trebuchet MS", "Arial", "Helvetica";
+$sansSerif: "Tahoma", "Segoe UI", "Trebuchet MS", "Arial", "Helvetica";
 $monoSpace: "Consolas", "Roboto Mono", "Courier New", "Courier";
 $tablePadding: 5px;
 $textFontSize: 14px;
@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #DDDDDD;
-	font-family: $sandSerif;
+	font-family: $sansSerif;
 }
 
 table {
