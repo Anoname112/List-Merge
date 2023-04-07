@@ -1,52 +1,52 @@
 var d;
-var ta1;
-var ta2;
-var ta3;
+var textarea1;
+var textarea2;
+var textarea3;
 
 window.onload = function () {
 	d = document;
-	ta1 = d.getElementById("textarea1");
-	ta2 = d.getElementById("textarea2");
-	ta3 = d.getElementById("textarea3");
+	textarea1 = d.getElementById("textarea1");
+	textarea2 = d.getElementById("textarea2");
+	textarea3 = d.getElementById("textarea3");
 }
 
 function clearList () {
-	ta1.value = "";
-	ta2.value = "";
-	ta3.value = "";
+	textarea1.value = "";
+	textarea2.value = "";
+	textarea3.value = "";
 }
 
 function merge (sort) {
-	var ta1array = ta1.value.split("\n");
-	var ta2array = ta2.value.split("\n");
-	var ta3array = [];
+	var textarea1array = textarea1.value.split("\n");
+	var textarea2array = textarea2.value.split("\n");
+	var textarea3array = [];
 	
 	// Get data from textarea 1
-	for (var i = 0; i < ta1array.length; i++) {
-		if (ta1array[i].length > 0 && !ta3array.includes(ta1array[i])) {
-			ta3array.push(ta1array[i]);
+	for (var i = 0; i < textarea1array.length; i++) {
+		if (textarea1array[i].length > 0 && !textarea3array.includes(textarea1array[i])) {
+			textarea3array.push(textarea1array[i]);
 		}
 	}
 	
 	// Get data from textarea 2
-	for (var i = 0; i < ta2array.length; i++) {
-		if (ta2array[i].length > 0 && !ta3array.includes(ta2array[i])) {
-			ta3array.push(ta2array[i]);
+	for (var i = 0; i < textarea2array.length; i++) {
+		if (textarea2array[i].length > 0 && !textarea3array.includes(textarea2array[i])) {
+			textarea3array.push(textarea2array[i]);
 		}
 	}
 	
 	// Sort data
 	if (sort) {
-		for (var i = 0; i < ta3array.length - 1; i++) {
-			for (var j = i + 1; j < ta3array.length; j++) {
-				if (ta3array[j] < ta3array[i]) {
-					var temp = ta3array[i];
-					ta3array[i] = ta3array[j];
-					ta3array[j] = temp;
+		for (var i = 0; i < textarea3array.length - 1; i++) {
+			for (var j = i + 1; j < textarea3array.length; j++) {
+				if (textarea3array[j] < textarea3array[i]) {
+					var temp = textarea3array[i];
+					textarea3array[i] = textarea3array[j];
+					textarea3array[j] = temp;
 				}
 			}
 		}
 	}
 	
-	ta3.value = ta3array.join("\n");
+	textarea3.value = textarea3array.join("\n");
 }
